@@ -8,7 +8,8 @@
      import {Head,Footer} from '../../src/index.js'
   ```
 ## 使用  
-  * 首先保证html中存在head,footer两部分以供插入。如下
+  * 首先保证html中存在head,footer两部分以供插入。如下  
+  
   ```html
      <header id="head"></header>
      <div id="root" style="padding: 10px;margin-bottom:500px">
@@ -16,7 +17,8 @@
      </div>
      <footer id="footer"></footer>
   ```
-  * 头部支持配置，传入一个title数组即可。如下:
+  * 头部支持配置，传入一个title数组即可。如下:  
+  
     ```js
        let titles = [
            {title: '博客', href: 'http://uedfamily.com/'},
@@ -30,6 +32,7 @@
        );
     ```
   * 底部信息支持传参和children两种形式,两者都存在的情况下，children形式优先。  
+    
     ```js
        ReactDom.render(
            <Footer content='adasdas'>
