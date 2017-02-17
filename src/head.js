@@ -1,6 +1,5 @@
 import React,{PropTypes,Component} from 'react';
 import classnames from 'classnames';
-import ReactDom from 'react/lib/ReactDOM';
 export default class Head extends Component {
     static defaultProps = {
         titles: [{title: '文档', href: 'http://uedfamily.com/'},

@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("react"), require("react/lib/ReactDOM"));
+		module.exports = factory(require("react"));
 	else if(typeof define === 'function' && define.amd)
-		define(["react", "react/lib/ReactDOM"], factory);
+		define(["react"], factory);
 	else {
-		var a = typeof exports === 'object' ? factory(require("react"), require("react/lib/ReactDOM")) : factory(root["React"], root["ReactDom"]);
+		var a = typeof exports === 'object' ? factory(require("react")) : factory(root["React"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
-})(this, function(__WEBPACK_EXTERNAL_MODULE_8__, __WEBPACK_EXTERNAL_MODULE_10__) {
+})(this, function(__WEBPACK_EXTERNAL_MODULE_8__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -75,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	exports.Head = _headJs2['default'];
 	
-	var _footerJs = __webpack_require__(11);
+	var _footerJs = __webpack_require__(10);
 	
 	var _footerJs2 = _interopRequireDefault(_footerJs);
 	
@@ -435,10 +435,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _classnames2 = _interopRequireDefault(_classnames);
 	
-	var _reactLibReactDOM = __webpack_require__(10);
-	
-	var _reactLibReactDOM2 = _interopRequireDefault(_reactLibReactDOM);
-	
 	var Head = (function (_Component) {
 	    _inherits(Head, _Component);
 	
@@ -583,12 +579,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 10 */
-/***/ function(module, exports) {
-
-	module.exports = __WEBPACK_EXTERNAL_MODULE_10__;
-
-/***/ },
-/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -610,10 +600,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	var _classnames = __webpack_require__(9);
 	
 	var _classnames2 = _interopRequireDefault(_classnames);
-	
-	var _reactLibReactDOM = __webpack_require__(10);
-	
-	var _reactLibReactDOM2 = _interopRequireDefault(_reactLibReactDOM);
 	
 	var Footer = (function (_Component) {
 	    _inherits(Footer, _Component);
